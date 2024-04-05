@@ -1,0 +1,55 @@
+# import_id: fields (which MUST be strings) are only needed to import existing resources;
+# can be omitted for new ones
+organization: 
+  name: infra-as-code-experiments
+  import_id: "781368192"
+users:
+  - name: jaimergp
+    import_id: "infra-as-code-experiments:jaimergp"
+    role: admin
+  - name: beckermr
+    role: admin
+repositories:
+  - name: private
+    import_id: private
+    visibility: private
+  - name: website
+    import_id: website
+  - name: infra
+    import_id: infra
+    description: "Infrastructure as code configuration"
+  - name: requests
+    import_id: requests
+teams:
+  - name: admins
+    slug: admins
+    description: null
+    import_id: "9828147"
+    members:
+      - name: jaimergp
+        import_id: "9828147:jaimergp"
+        role: maintainer
+    permissions:
+      - role: "admin"
+        repositories: "*"
+  - name: reviewers
+    slug: reviewers
+    description: null
+    import_id: "9828158"
+    members:
+      - name: jaimergp
+        import_id: "9828158:jaimergp"
+        role: maintainer
+    permissions:
+      - role: "push"
+        repositories:
+          - requests
+  - name: security
+    slug: security
+    description: null
+    import_id: "9828160"
+    parent: admins
+    members:
+      - name: jaimergp
+        import_id: "9828160:jaimergp"
+        role: maintainer

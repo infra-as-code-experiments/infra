@@ -1,0 +1,10 @@
+name: infra-as-code-experiments
+runtime:
+  name: python
+  options:
+    virtualenv: .pixi/envs/default
+description: Managing a demo organization with Pulumi for Python
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: ""

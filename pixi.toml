@@ -1,0 +1,19 @@
+[project]
+name = "infra-as-code-experiments"
+version = "0.1.0"
+description = "Add a short description here"
+authors = ["jaimergp <jaimergp@users.noreply.github.com>"]
+channels = ["conda-forge"]
+platforms = ["osx-arm64"]
+
+[tasks]
+
+[dependencies]
+python = "3.12.2.*"
+pip = "24.0.*"
+"ruamel.yaml" = ">=0.18.6,<0.19"
+
+[pypi-dependencies]
+# Keep in sync with requirements.txt
+pulumi = ">=3.0.0,<4.0.0"
+pulumi-github = ">=4.0.0,<5.0.0"

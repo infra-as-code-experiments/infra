@@ -1,0 +1,39 @@
+{
+    "resources": [
+        {
+            "type": "github:index/team:Team",
+            "name": "admins",
+            "id": "9828147"
+        },
+        {
+            "type": "github:index/team:Team",
+            "name": "reviewers",
+            "id": "9828158"
+        },
+        {
+            "type": "github:index/team:Team",
+            "name": "security",
+            "id": "9828160"
+        },
+        {
+            "type": "github:index/repository:Repository",
+            "name": "private",
+            "id": "private"
+        },
+        {
+            "type": "github:index/repository:Repository",
+            "name": "website",
+            "id": "website"
+        },
+        {
+            "type": "github:index/repository:Repository",
+            "name": "infra",
+            "id": "infra"
+        },
+        {
+            "type": "github:index/repository:Repository",
+            "name": "requests",
+            "id": "requests"
+        }
+    ]
+}
